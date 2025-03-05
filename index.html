@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraBonus - Loyalty Bonus System</title>
+    <link rel="shortcut icon" href="./favic.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favic.svg">
+    <script src="./js/jquery.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.svg" alt="" srcset="">
+        </div>
+        <div class="nav-bar">
+            <ul class="nav-bar__items">
+                <li><a href="#">Зачем это мне?</a></li>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Копить баллы</a></li>
+                <li><a href="#">Тратить баллы</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="user-bar">
+            <div class="login">
+                <div class="icon_lot" id="animation-container-hover3">
+                    <div id="animation-container3" class="containerAnimation3"></div>
+                </div>
+                <span>войти</span>
+            </div>
+            <div class="search">
+                <div class="icon_lot" id="animation-container-hover">
+                    <div id="animation-container" class="containerAnimation"></div>
+                </div>
+                <!-- <img src="./img/icon/lop_bar.svg" alt="" srcset=""> -->
+            </div>
+            <div class="lang">
+                <button onclick="openBar()" class="btn-lang">
+                    <div class="icon_lot" id="animation-container-hover2">
+                        <div id="animation-container2" class="containerAnimation2"></div>
+                    </div>
+                </button>
+                <div class="lang__plan">
+                    <ul>
+                        <li><a href="">ru</a></li>
+                        <li><a href="">en</a></li>
+                        <li><a href="">et</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+           
+        </div>
+        <div class="burger-bar">
+            <div class="btn-burger">
+                <div class="btn-burder-line line-one"></div>
+                <div class="btn-burder-line line-two"></div>
+                <div class="btn-burder-line line-three"></div>
+                <div class="btn-burder-line line-four"></div>
+            </div>
+            
+        </div>
+    </header>
+    <section id="triggerOne" class="plane one">
+       <div class="block">
+        <div class="block_text">
+            <div class="text-main">
+                <h4>
+                    Добро пожаловать в <br>
+                    программу лояльности 
+                </h4>
+                <h6 class="text-main-span">это программа лояльности для постоянных покупателей. За покупки с бонусной картой вы получаете бонусы</h6>
+                <!-- <h1>
+                    FloraBonus
+                </h1> -->
+                <div class="btn-group mt21">
+                    <button class="reg-btn">
+                        <img src="./img/appstoreapp.svg" alt="" srcset="">
+                     </button>
+                     <button class="reg-btn">
+                         <img src="./img/googleplayplay.svg" alt="" srcset="">
+                     </button>
+                </div>
+            </div>    
+        </div>
+        <div class="block_img">
+            <div class="video-wrapper">
+                <video playsinline autoplay muted loop>
+                    <source src="./img/Woman.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+       
+        
+       </div>
+    </section>
+    
+    <section id="one">
+        <div class="inner innerS1">
+            <h1>Программа лояльности "FloraBonus"</h1>
+            <p>рассказываем, как получить <strong>максимальную выгоду </strong> </p>
+        </div>
+    </section>
+    <section id="two">
+        <div class="innerText innerS2">
+            <h2>Копите бонусы и <br> оплачивайте покупки!</h2>
+            <ul class="features">
+                <li>Выбирайте <strong>красивые букеты, яркие цветы и милые игрушки,</strong>  списывайте бонусы и копите новые при покупках в розничных магазинах</li>
+                <li>Ваш бонусный счёт всегда с вами. Показывайте QR code виртуальной карты на кассах ///, чтобы потратить бонусы на покупки и получить кэшбэк.</li>
+                <li>Максимальное списание 50% от суммы заказа</li>
+                <li>Кэшбэк будет зачисляться на всё тот же общий бонусный счёт.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="three">
+      <div class="innerText innerS3">
+          <h2>Магазины рядом с вами!</h2>
+          <ul class="features">
+            <li>Находите магазины рядом с вами</li>
+            <li>Стройте маршрут до ближайшего магазина</li>
+            <li>Стройте маршрут до ближайшего магазина</li>
+          </ul>
+      </div>
+    </section>
+    <section id="four">
+        <div class="innerText innerS4">
+      <h2>Все транзакции в приложении!</h2>
+          <ul class="features">
+            <li></li>
+          </ul>
+      </div>
+        <div class="iphone">
+            <p class="screen screenHat"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/107366/img_scrollMagic.png" /></p>
+            <p class="screen screenA"></p>
+            <p class="screen screenB"></p>
+            <p class="screen screenC"></p>
+        </div>
+    </section>
+    <!-- <section id="triggerTwo" class="plane two">
+       <div class="screeneTwoMove">
+        <div class="screeneTwoMove__item">
+            <form class="move" id="move">
+                <fieldset>
+                    <p id="high1">Копите бонусы</p>
+                    <div id="line-hight1"></div>
+                    <p id="high2">Магазины рядом</p>
+                    <div id="line-hight2"></div>
+                    <p id="high3">История покупок</p>
+                    <div id="line-hight3"></div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="screeneTwoMove__item">
+            <div class="coub" id="coub"></div>
+            <div id="phone" class="img-block-phone"></div>
+        </div>
+        <div class="screeneTwoMove__item">
+            <div id="text-one">
+                <h2>Бонусы</h2>
+                <span>
+                    В рамках спецификации современных стандартов, тщательные исследования конкурентов представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть ассоциативно распределены по отраслям. Приятно, граждане, наблюдать, как стремящиеся вытеснить традиционное производство, нанотехнологии заблокированы в рамках своих собственных рациональных ограничений. Задача организации, в особенности же укрепление и развитие внутренней структуры требует определения и уточнения дальнейших направлений развития.
+                </span> 
+            </div>
+        </div>
+       </div>
+    </section> -->
+     <!-- <section id="triggerThree" class="plane-two three">
+        <b>Tree</b>
+    </section> -->
+   <!--<section id="triggerFour" class="plane-two four">
+        <b>Four</b>
+    </section>
+    <section id="triggerFive" class="plane-two five">
+        <b>five</b>
+    </section> -->
+    <section id="triggerSix" class="plane six">
+        <b>six</b>
+    </section>
+
+    <footer>
+
+
+    </footer>
+
+
+    <div class="alert_cookies">
+        <div class="alert_cookies__item">
+            <span>Мы обрабатываем файлы cookie и другие пользовательские данные для бесперебойной работы сайта, повышения удобства его использования, персонализации и улучшения качества рекомендаций.</span>
+        <div class="btn-group">
+            <button class="btn btn__color__trans">подробнее</button>
+            <button onclick="closeAlert()" class="btn btn__color__green">принять</button>
+        </div>
+        </div>
+    </div>
+
+ 
+ <script src="./js/ScrollMagic.js"></script>
+ <script src="./js/animation.gsap.js"></script>
+ <script src="./js/plugins/debug.addIndicators.js"></script>   
+ <script src="./js/script.js"></script>
+</body>
+</html>
