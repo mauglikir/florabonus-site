@@ -479,20 +479,20 @@ video {
     visibility: hidden;
   }
   .iphone p.screenA{
-    background-image: url(/img/maintest.png);
+    background-image: url(../img/maintest.png);
     width: 80%;
     height: 95%;
     background-size: cover;
   } 
 
   .iphone p.screenB{
-    background-image: url(/img/Shop.png);
+    background-image: url(../img/Shop.png);
     width: 80%;
     height: 95%;
     background-size: cover;
   } 
   .iphone p.screenC{
-    background-image: url(/img/Transition.png);
+    background-image: url(../img/Transition.png);
     width: 80%;
     height: 95%;
     background-size: cover;
