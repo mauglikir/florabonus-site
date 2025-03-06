@@ -2,22 +2,7 @@ $(function () { // wait for document ready
     // init
     var controller = new ScrollMagic.Controller();
 
-    // // get all slides
-    // var slides = document.querySelectorAll("section.plane");
-
-    // // create scene for every slide
-    // for (var i=0; i<slides.length; i++) {
-    //     new ScrollMagic.Scene({
-    //             triggerElement: slides[i]
-    //         })
-    //         .setPin(slides[i], {pushFollowers: false})
-    //         .addIndicators() // add indicators (requires plugin)
-    //         .addTo(controller);
-            
-              
-    // }
-
-    // TEST
+    
 
 
 
@@ -29,144 +14,17 @@ $(function () { // wait for document ready
     .setPin('#triggerOne')
     .addIndicators()
 
-    // END SCENE ONE
-
-    // SCENE TWO
-    //  let sceneTwo= new ScrollMagic.Scene({
-    //     triggerHook:'onLeave',
-    //     triggerElement: '#triggerTwo',
-    //     duration: '100%'
-    // })
-    // // .setClassToggle("#text-one", "load")
-    // .setTween("#test2", 0.5, {scale: 1, opacity:1}) // trigger a TweenMax.to tween
-    // .setPin('#triggerTwo',{pushFollowers: false})
-    // .addIndicators()
-    // .on('start', (event) => {
-    //     if(event.scrollDirection === 'FORWARD') {
-    //         $('#text-one').addClass('load')
-           
-    //     } else {
-    //         $('#text-one').removeClass('load');
-            
-    //     }
-    // })
     
 
-    // let sceneTwoMenu = new ScrollMagic.Scene({
-    //     triggerElement:'#dscs'
-    // })
-    // .setTween("#test2", 0.5, {scale: 4, opacity:1}) // trigger a TweenMax.to tween
-    // .setPin('sdcdscds')
-
-    // END SCENE TWO
-    
-
-    // SCENE THREE
-    // let sceneThree= new ScrollMagic.Scene({
-    //     triggerElement: '#triggerThree',
-    //     duration: '50%',
-    //     triggerHook: '40%',
-
-    // })
-    // .setClassToggle("#line-hight1", "visit")
-    // .setPin('#triggerThree', {pushFollowers: false})
-    // .addIndicators()
-
-    // let sceneTwoCoub = new ScrollMagic.Scene({
-    //     triggerElement: "#triggerThree",
-    //     duration: '50%',
-    //     triggerHook: 0.4,
-    // })
-    // .setTween("#coub", 0.5, {scale: 1.4, opacity:1})
-
-
-
-    // END SCENE THREE
-
-
-    // SCENE FOUR
-    // let sceneFour = new ScrollMagic.Scene({
-    //     triggerElement: '#triggerFour',
-    //     duration: '50%',
-    //     triggerHook: '40%',
-    // })
-    // // .setTween("#phone", 0.2, {scale:1.2})
-    // .setClassToggle("#high2", "visit") // add class toggle
-    // .setPin('#triggerFour', {pushFollowers: false})
-    // .addIndicators()
-    // END SCENE FOUR
-
-    // SCENE FIVE
-    // let sceneFive = new ScrollMagic.Scene({
-    //     triggerElement: '#triggerFive',
-    //     duration: '50%',
-    //     triggerHook: '40%',
-    // })
-    // // .setTween(TweenMax.fromTo("#phone", 0.2, {opacity: 1}, {opacity: 0}))
-    // .setClassToggle("#high3", "visit") // add class toggle
-    // .setPin('#triggerFive', {pushFollowers: false})
-    // .addIndicators()
-    // .on('start', (event) => {
-    //     if(event.scrollDirection === 'FORWARD') {
-    //         $('#text-one').removeClass('load')
-           
-    //     } else {
-    //         $('#text-one').addClass('load');
-    //     }
-    // })
-    // END SCENE FIVE
-
-    // SCENE SIX
-    // let sceneSix = new ScrollMagic.Scene({
-    //     triggerElement: '#triggerSix',
-    //     duration: '50%',
-    //     triggerHook: '40%',
-    // })
-    // .setClassToggle("#high3", "visit") // add class toggle
-    // .setPin('#triggerSix', {pushFollowers: false})
-    // .addIndicators()
-
-    // END SCENE SIX
-   
-    
-    // let sceneTwoPhone= new ScrollMagic.Scene({
-    //     triggerElement: '#triggerTwo',
-    //     // duration: '100%'
-    // })
-    // .setTween(TweenMax.fromTo("#phone", 0.2, {opacity: 0}, {opacity: 1}))
-    // .setPin('#triggerTwo',{pushFollowers: false})
-    // .addIndicators()
-
-
-
-
-
-  
-    
-
-    
-
-    
-
-    
 
 
     controller.addScene([
         sceneOne,
         sceneTwo,
-        // sceneTwoMenu,
-        // sceneTwoCoub,
-        // sceneTwoPhone,
-        //  sceneThree,
-        // sceneFour,
-        // sceneFive,
-        // sceneSix
+        
     ])
    
 });
-
-
-
 
 
 
@@ -201,14 +59,7 @@ var wh = window.innerHeight,
 	 
 	});
 
-	// iPhone intro animation Tween
-	/*
-	var iphoneIntro = TweenMax.from($iphone, 1, {
-		yPercent: 50,
-		xPercent: 100,
-		ease: Cubic.easeOut
-	});
-  */
+	
 
 	// iPhone intro animation Timeline
 	var iphoneIntroTl = new TimelineMax();
